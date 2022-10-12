@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/fch-bsp/k8s-web-color-page.git
     targetRevision: HEAD
-    path: k8s
+    path: k8s # monitorando de 3 em 3 minutos 
   destination: 
     server: https://kubernetes.default.svc
     namespace: webcolor
