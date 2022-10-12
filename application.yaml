@@ -12,7 +12,7 @@ spec:
     path: k8s # monitorando de 3 em 3 minutos 
   destination: 
     server: https://kubernetes.default.svc
-    namespace: webcolor
+    namespace: webcolor1
 
   syncPolicy:
     syncOptions:
