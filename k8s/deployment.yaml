@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webcolor1
+  name: webcolor
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: webcolor1
+      app: webcolor
   template:
     metadata:
       labels:
-        app: webcolor1
+        app: webcolor
     spec:
       containers:
       - name: webcolor
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webcolor1
+  name: webcolor
 spec:
   selector:
-    app: webcolor1
+    app: webcolor
   ports:
   - port: 80  
     targetPort: 80

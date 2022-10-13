@@ -18,7 +18,7 @@ http://localhost:8080/
 
 
 
-kubectl port-forward  svc/webcolor -n webcolor  9191:80
+kubectl port-forward  svc/webcolor1 -n webcolor  9191:80
 
 http://localhost:9191/
 
