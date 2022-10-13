@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: webcolor
 spec:
-  replicas: 5
+  replicas: 15
   selector:
     matchLabels:
       app: webcolor
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webcolor
-        image: fabricioveronez/web-page:erro
+        image: fabricioveronez/web-page:green
         ports:
         - containerPort: 80
 ---
