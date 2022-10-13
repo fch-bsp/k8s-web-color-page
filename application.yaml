@@ -18,6 +18,6 @@ spec:
     syncOptions:
     - CreateNamespace=true
 
-    automated:
-      selfHeal: false
-      prune: false
+    # automated:
+    #   selfHeal: false
+    #   prune: false
