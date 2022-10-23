@@ -37,6 +37,24 @@ dicas:
 sudo netstat -tlpn
 
 # Lista todos os processos que estão rodando na porta 8080
+
+
+==================================================================================================================================
+comando criação cli 
+
+argocd app create app-webcolor1 \
+--project default \
+--repo https://github.com/fch-bsp/k8s-web-color-page.git \
+--path k8s \
+--sync-policy auto \
+--dest-namespace webcolor1 \
+--dest-server https://kubernetes.default.svc
+
+
+comando para deleta app 
+
+argocd app delete app-webcolor1
+
 sudo netstat -tlpn | grep 8080
 
 # Mata processo que está rodando na porta 8080
