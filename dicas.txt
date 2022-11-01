@@ -1,4 +1,4 @@
-k3d cluster create --servers 1 --agents 2 teste
+ k3d cluster create --servers 1 --agents 2 
 
 2. kubectl create namespace argocd
 
